@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section id="header">
+      <a>
+        <h1>𝒪𝒞𝐸𝒜𝒩 𝒮𝐸𝒜𝐿𝐸𝑅𝒮</h1>
+      </a>
+      <div>
+        <ul id="Nav-bar">
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./product.html">shop</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <!-- <li><a href="./about.html">About</a></li> -->
+          <li><a href="./sign-up.html" class="active">Sign-in</a></li>
+          <a href="#"><i class="fa-solid fa-xmark" id="close"></i></a>
+          <li>
+            <a href="./cart.html"
+              ><i id="lg-bag" class="fa-solid fa-bag-shopping"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="./cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+      <div id="mobile">
+        <a href="./cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </section>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign Up Form</title>
+        <style>
+          /* Basic CSS Reset */
+          * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+          }
+
+          /* Body styles */
+          @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "League Spartan", sans-serif;
+          }
+
+          body {
+            background-color: #e3e6f3;
+          }
+          /* Card styles */
+          .card {
+            width: 800px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+            margin-left: 220px;
+            margin-top: 70px;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+          }
+          /* Form styles */
+          h2 {
+            text-align: center;
+            font-size: 48px;
+          }
+          .card {
+            color: #e3e6f3;
+
+            background-color: #000000;
+          }
+          .card form {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: #000000;
+          }
+          .phone {
+            background-color: rgb(255, 255, 255);
+            height: 300px;
+            border-radius: 20px;
+            width: 300px;
+            box-shadow: 20px 20px 30px rgba(255, 251, 251, 0.2);
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: #000000;
+          }
+          .phone img {
+            height: 70px;
+            width: 70px;
+            border-radius: 30px;
+          }
+          .adres{
+        
+            margin-top: 35px;
+          }
+          .section-p{
+            background-color: #000000;
+            color: #e3e6f3;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            height: 300px;
+          }
+          @media (max-width: 480px) {
+            .card {
+              width: 90%;
+              display: flex;
+              justify-content: center;
+              /* position: absolute;
+              left: 30%;
+              top: 20%; */
+              margin: 10px auto;
+              padding: 10px;
+              margin-left: 80px;
+              padding-top: 30px;
+              
+            }
+            .adres{
+              width: 370px;
+            }
+            .section-p{
+              width: 570px;
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              flex-wrap: wrap;
+            }
+        
+            .card form {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #ffffff;
+          }
+          .phone {
+            background-color: rgb(0, 0, 0);
+            height: 220px;
+            border-radius: 20px;
+            width: 200px;
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+           font-size: 12px;
+           font-weight: bolder;
+           color: #e3e6f3;
+           
+          }
+          .columninstalll{
+            display: none;
+          }
+          .column2{
+       
+            display: none;
+           
+          }
+          .phone img {
+            height: 50px;
+            width: 50px;
+            border-radius: 20px;
+          }
+            h2 {
+              font-size: 28px;
+            }
+
+            .card form label,
+            .card form input {
+              font-size: 14px;
+            }
+
+            .card form input[type="text"],
+            .card form input[type="email"],
+            .card form input[type="password"] {
+              font-size: 14px;
+            }
+          }
+        </style>
+      </head>
+
+      <body>
+        <div class="card">
+          <h2>CONTACT US</h2>
+          <form action="#">
+            <div class="phone">
+              <img src="./assests/OIP.jpeg" alt="" />
+              <h1>𝐏𝐇𝐎𝐍𝐄</h1>
+              <br />
+              <p>MUHAMMAD UMER SIDDIQUE<br /><span> <a href="tel:+923452835139">+923452835139</a></span></p>    
+              <br />    
+              <p> BILAL SIDDIQUE<br /><span> <a href="tel:+923452835139">+923452835139</a></span></p>
+            </div>
+            <div class="phone">
+                <img src="./assests/email.jpeg" alt="" />
+                <h1>𝐄𝐌𝐀𝐈𝐋</h1>
+                <br />
+                <p>MUHAMMAD UMER SIDDIQUE<br /><span><a href="mailto:umarsiddiqui034@gmail.com">umarsiddiqui034@gmail.com</a></span></p>    
+                <br />    
+                <p> BILAL SIDDIQUE<br /><span><a href="mailto:umarsiddiqui034@gmail.com">umarsiddiqui034@gmail.com</a></span></p>
+              </div>
+          </form>
+        </div>
+        <div class="adres">
+          <h1>SHOP ADRESS</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.6844825612015!2d67.0369721760123!3d24.874623577920083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e5e736977c1%3A0x70ed36c8a6891d3a!2sMazar-e-Quaid-e-Azam!5e0!3m2!1sen!2s!4v1724127086389!5m2!1sen!2s" width="1256" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <footer class="section-p">
+          <div class="column">
+            <img class="Logo" src="./assets/logo.png" alt="img" />
+            <h4>contact</h4>
+            <p>
+              <strong>Address:</strong> 562 Wellington Road, Street 32, San
+              francisco
+            </p>
+            <p><strong>Phone:</strong> +923452835139</p>
+            <p><strong>Hours:</strong> 10 : 00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+              <h4>Follow us</h4>
+              <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+          <div class="column1">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">contact Us</a>
+          </div>
+          <div class="column2">
+            <h4>My Account</h4>
+            <a href="#">My Account</a>
+            <a href="#">Sign- in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+          </div>
+          <div class="columninstalll">
+            <h4>Install app</h4>
+            <p>From App Store or google play</p>
+            <div class="Row">
+              <img src="./assests/pay/app.jpg" alt="" />
+              <img src="./assests/pay/play.jpg" alt="" />
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="./assests/pay/pay.png" alt="" />
+          </div>
+          <div class="copyright"></div>
+        </footer>
+      </body>
+    </html>
+  </body>
+</html>
