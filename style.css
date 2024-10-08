@@ -1,0 +1,57 @@
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  #Nav-bar.active {
+    right: 0;
+  }
+  #Nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+  #mobile {
+    display: none;
+    align-items: center;
+  }
+  #Nav-bar li {
+    padding: 0 20px;
+    position: relative;
+  }
+  #Nav-bar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1a1a1a;
+  }
+  #Nav-bar li a:hover {
+    color: #088178;
+    transition: 0.3s ease;
+  }
+  #Nav-bar li a:hover,
+  #Nav-bar li a.active {
+    color: #088178;
+  }
+  #Nav-bar li a.active::after,
+  #Nav-bar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+/* contact page */
+  
+  
